@@ -1,4 +1,4 @@
-import './Todo.css'
+import './Todo.scss'
 
 const Todo = () => {
     return(

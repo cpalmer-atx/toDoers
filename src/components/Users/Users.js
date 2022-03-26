@@ -1,6 +1,6 @@
 import UserForm from '../UserForm/UserForm';
 import UserList from '../UserList/UserList';
-import './Users.css'
+import './Users.scss'
 
 const Users = () => {
     return(

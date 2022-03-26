@@ -1,5 +1,5 @@
 import User from '../User/User';
-import './UserList.css'
+import './UserList.scss'
 
 const UserList = () => {
     return(

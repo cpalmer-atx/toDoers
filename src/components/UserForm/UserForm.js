@@ -1,4 +1,4 @@
-import './UserForm.css'
+import './UserForm.scss'
 
 const UserForm = () => {
     return(

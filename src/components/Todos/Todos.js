@@ -1,5 +1,5 @@
 import Todo from '../Todo/Todo';
-import './Todos.css'
+import './Todos.scss'
 
 const Todos = () => {
     return(

@@ -1,6 +1,6 @@
 import Todos from '../Todos/Todos';
 import Users from '../Users/Users';
-import './Content.css'
+import './Content.scss'
 
 const Content = () => {
     return(
