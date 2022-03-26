@@ -1,49 +1,56 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .header {
-  height: 25vh;
-
+  /* Temporary boarder */
   border: red 3px solid;
+  
+  height: 25vh;
 }
 
 .content {
+  /* Temporary boarder */
   border: blue 3px solid;
 }
 
 .content-components {
+  /* Temporary boarder */
+  border: gray 2px dotted;
+
+  align-items: flex-start;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   width: 100%;
-  /* margin: 10px; */
-
-  border: gray 2px dotted;
 }
 
 .users,
 .todos {
-  margin: 10px;
-  /* padding: 10px; */
+  /* Temporary boarder */
   border: green 1px dotted;
+
+  margin: 10px;
 }
 
 .users {
-  width: 100%;
   padding: 5px;
+  width: 100%;
 }
 
 .user-form,
 .user-list {
-  padding: 5px;
+  /* Temporary boarder */
   border: yellowgreen 2px dotted;
+
+  padding: 5px;
 }
 
 .user {
-  margin: 2px;
+  /* Temporary boarder */
   border: gray 2px solid;
+
+  margin: 2px;
 }
 
 .user-form {
@@ -51,10 +58,41 @@
 }
 
 .todos {
+  padding: 5px;
   width: 100%;
 }
 
 .todo {
-  margin: 5px;
+  /* Temporary boarder */
   border: yellowgreen 1px dotted;
+
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  .content-components {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .users,
+  .user-form,
+  .user-list,
+  .user,
+  .todos,
+  .todo {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .user-form {
+    display: none;
+  }
 }
