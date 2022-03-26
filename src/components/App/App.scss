@@ -7,12 +7,14 @@
   /* Temporary boarder */
   border: red 3px solid;
   
-  height: 25vh;
+  height: 8vh;
 }
 
 .content {
   /* Temporary boarder */
   border: blue 3px solid;
+
+  height: 92vh;
 }
 
 .content-components {
@@ -51,6 +53,13 @@
   border: gray 2px solid;
 
   margin: 2px;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    padding: 1px;
+    transition: all 0.1s ease-in;
+  } 
 }
 
 .user-form {
