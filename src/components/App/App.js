@@ -1,8 +1,13 @@
 import './App.css';
+import Header from '../Header/Header';
+import Content from '../Content/Content';
 
-function App() {
+const App = () => {
   return (
-    <h1>Hello World!</h1>
+    <>
+      <Header />
+      <Content />
+    </>
   );
 }
 

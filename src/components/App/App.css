@@ -2,3 +2,59 @@
   padding: 0;
   margin: 0;
 }
+
+.header {
+  height: 25vh;
+
+  border: red 3px solid;
+}
+
+.content {
+  border: blue 3px solid;
+}
+
+.content-components {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  /* margin: 10px; */
+
+  border: gray 2px dotted;
+}
+
+.users,
+.todos {
+  margin: 10px;
+  /* padding: 10px; */
+  border: green 1px dotted;
+}
+
+.users {
+  width: 100%;
+  padding: 5px;
+}
+
+.user-form,
+.user-list {
+  padding: 5px;
+  border: yellowgreen 2px dotted;
+}
+
+.user {
+  margin: 2px;
+  border: gray 2px solid;
+}
+
+.user-form {
+  margin-bottom: 5px;
+}
+
+.todos {
+  width: 100%;
+}
+
+.todo {
+  margin: 5px;
+  border: yellowgreen 1px dotted;
+}
