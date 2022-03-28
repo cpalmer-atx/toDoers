@@ -13,5 +13,5 @@
 >Here we can see the sloppy wire frame realized in a browser with the help of some boarders around each component.
 
 <center>
-    <img src="./src/images/gifs/outline.gif" alt="outline" width="300"/>
+    <img src="./src/images/gifs/outline.gif" align="center" alt="outline" width="300"/>
 </center>
