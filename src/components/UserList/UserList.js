@@ -1,13 +1,15 @@
 import User from '../User/User';
 import './UserList.scss'
 
-const UserList = () => {
+const UserList = ({ users }) => {
+
     return(
         <div className='user-list'>
             <h3>UserList</h3>
-            <User />
-            <User />
-            <User />
+            { users.length > 0 ?
+                users.map( (user) => <User key={user.email} user={user} /> ) :
+                <span>No users found...</span>
+            }
         </div>
     );
 };
