@@ -1,9 +1,11 @@
 import './User.scss'
 
-const User = () => {
+const User = ({ user: { name, email } }) => {
+    
     return(
         <div className='user'>
-            <h4>User</h4>
+            <h4>{name}</h4>
+            <h6>{email}</h6>
         </div>
     );
 };
