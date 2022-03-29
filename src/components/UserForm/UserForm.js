@@ -6,7 +6,23 @@ const UserForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(`Success!  ${newUser.name} submitted!`);
+
+        const validation = {
+            name: String,
+            email: String,
+        };
+
+        newUser.name === '' ? 
+            validation.name = 'missing field' : 
+            validation.name = newUser.name;
+
+        // Regex RFC 2822 validation for email
+        /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(newUser.email) ? 
+            validation.email = newUser.email : 
+            validation.email = 'invalid email';
+
+        console.log(validation);
+        setNewUser({ name: '', email: '' });
     };
 
     const handleNameField = (e) => {
@@ -18,25 +34,27 @@ const UserForm = () => {
     };
 
     return(
-        <form className='user-form' onSubmit={ handleSubmit }>
-            <input
-                className='form-name'
-                value={ newUser.name }
-                onChange={ handleNameField }
-                placeholder='Name'
-            />
-            <input
-                className='form-email'
-                value={ newUser.email }
-                onChange={ handleEmailField }
-                placeholder='Email'
-            />
-            <button
-                className='btn form-btn'
-                type='submit'
-                >Submit
-            </button>
-        </form>
+        <div className='user-form'>
+            <form className='form-body' onSubmit={ handleSubmit }>
+                <input
+                    className='form-name'
+                    value={ newUser.name }
+                    onChange={ handleNameField }
+                    placeholder='Name'
+                /><br />
+                <input
+                    className='form-email'
+                    value={ newUser.email }
+                    onChange={ handleEmailField }
+                    placeholder='Email'
+                /><br />
+                <button
+                    className='btn form-btn'
+                    type='submit'
+                    >Submit
+                </button>
+            </form>
+        </div>
     );
 };
 
