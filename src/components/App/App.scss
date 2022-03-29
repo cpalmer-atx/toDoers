@@ -14,7 +14,6 @@
 .content {
   /* Temporary boarder */
   border: blue 3px solid;
-
   height: 92vh;
 }
 
@@ -45,8 +44,12 @@
 .user-list {
   /* Temporary boarder */
   border: yellowgreen 2px dotted;
-
+ 
   padding: 5px;
+}
+
+.form-body {
+  margin: auto;
 }
 
 .user {
