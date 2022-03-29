@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import db from '../../data/db.json';
+
 import './UserForm.scss'
 
 const UserForm = () => {
@@ -21,8 +23,14 @@ const UserForm = () => {
             validation.email = newUser.email : 
             validation.email = 'invalid email';
 
-        console.log(validation);
         setNewUser({ name: '', email: '' });
+
+        if (!(validation.name === 'missing field') && !(validation.email === 'invalid email')) {
+            db.users.push(validation);
+            console.log('success!', db.users);
+        } else {
+            console.log(validation);
+        }
     };
 
     const handleNameField = (e) => {
