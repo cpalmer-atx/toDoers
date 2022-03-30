@@ -17,6 +17,7 @@ const UserForm = ({ addUser, users }) => {
             validation.name = newUser.name;
 
         // Regex RFC 2822 validation for email
+        /* eslint-disable-next-line */
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(newUser.email) ? 
             validation.email = newUser.email : 
             validation.email = 'invalid email';
