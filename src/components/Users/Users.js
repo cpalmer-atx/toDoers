@@ -11,8 +11,7 @@ const Users = () => {
 
     return(
         <div className='users'>
-            <h2>Reserved for Users</h2>
-            <button className='btn' onClick={ handleClick }>Add new user</button>
+            <button className='btn add-user-btn' onClick={ handleClick }>Add new user</button>
             { visible && <UserForm addUser={setUsers} users={users} /> }
             <UserList users={users} />
         </div>
