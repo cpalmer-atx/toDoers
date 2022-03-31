@@ -1,17 +1,15 @@
-import avatar from "../../images/stock/avatar.jpg"  // temporary avatar to build out user card
 import './User.scss'
+
+const gravatar = require('gravatar');
 
 const User = ({ user: { name, email } }) => {
     
+    const gravatarURL = gravatar.url(email, { s: '200', r: 'pg', d: 'retro'} );
+    
     return(
-        // <div className='user'>
-        //     <h4>{name}</h4>
-        //     <h6>{email}</h6>
-        // </div>
         <div className='user'>
             <div className='avatar'>
-                <img src={avatar} alt="portrait" />
-                {/* <h5>avatar</h5> */}
+                <img src={gravatarURL} alt="portrait" />
             </div>
             <div className='user-name'>
                 <h3>{name}</h3>
