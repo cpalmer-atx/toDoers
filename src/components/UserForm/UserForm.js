@@ -48,19 +48,24 @@ const UserForm = ({ addUser, users }) => {
         <div className='user-form'>
             <form className='form-body' onSubmit={ handleSubmit }>
                 <input
-                    className='form-name'
+                    id='form-name'
+                    className='form-input-field'
+                    type='text'
                     value={ newUser.name }
                     onChange={ handleNameField }
                     placeholder='Name'
                 /><br />
                 <input
-                    className='form-email'
+                    id='form-email'
+                    className='form-input-field'
+                    type='text'
                     value={ newUser.email }
                     onChange={ handleEmailField }
                     placeholder='Email'
                 /><br />
                 <button
-                    className='btn form-btn'
+                    id='btn'
+                    className='form-submit btn'
                     type='submit'
                     >Submit
                 </button>
