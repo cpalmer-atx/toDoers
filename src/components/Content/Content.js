@@ -5,7 +5,6 @@ import './Content.scss'
 const Content = () => {
     return(
         <div className='content'>
-            <h1>Reserved for Content</h1>
             <div className='content-components'>
                 <Users />
                 <Todos />
