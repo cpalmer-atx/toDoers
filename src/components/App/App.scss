@@ -64,14 +64,39 @@ body {
 
 .user-form,
 .user-list {
-  /* Temporary boarder */
-  border: yellowgreen 2px dotted;
- 
   padding: 5px;
 }
 
 .form-body {
-  margin: auto;
+  padding: 2px;
+  
+  .form-input-field {
+    box-sizing: border-box;
+    width: 100%;
+
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .form-submit {
+    background-color: steelblue;
+  }
+}
+
+.btn {
+  color: #fff;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.add-user-btn {
+  background-color: green;
 }
 
 .user {
@@ -118,7 +143,7 @@ body {
     // border: gray 1px dotted;
     justify-self: right;
     align-self: flex-start;
-    
+
     padding: 3px;
   }
 
@@ -130,6 +155,13 @@ body {
 }
 
 .user-form {
+  // border: red 2px solid;
+  border-right: black 1px solid;
+  border-left: black 1px solid;
+  border-bottom: black 1px solid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #efefef;
   margin-bottom: 5px;
 }
 
