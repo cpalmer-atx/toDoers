@@ -3,9 +3,15 @@ import UserForm from '../UserForm/UserForm';
 import UserList from '../UserList/UserList';
 import './Users.scss'
 
+// Temporary users while user cards are built out.
+const tempState = [
+    { name: 'Chad', email: 'chad.n.palmer@gmail.com' }, 
+    { name: 'John', email: 'j@email.com' }
+];
+
 const Users = () => {
     const [ visible, setVisible ] = useState(false);
-    const [ users, setUsers ] = useState([]);
+    const [ users, setUsers ] = useState(tempState);
     
     const handleClick = (e) => { setVisible(!visible) }
 
