@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,8 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  font-family: 'Roboto', sans-serif;
 }
 
 #root {
@@ -45,7 +49,7 @@ body {
       justify-self: flex-end;
       align-self: flex-end;
       margin-bottom: 17px;
-      
+
       .modal-close-btn {
         background-color: crimson;
       }
@@ -190,9 +194,13 @@ body {
   .todo-count {
     // border: gray 1px dotted;
     justify-self: right;
-    align-self: flex-start;
+    align-self: center;
 
-    padding: 3px;
+    padding: 5px;
+    margin: 5px;
+    // background-color: gray;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    border-radius: 3px;
   }
 
   &:hover {
@@ -243,6 +251,7 @@ body {
   .user,
   .todos,
   .todo {
+    max-width: 100%;
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
