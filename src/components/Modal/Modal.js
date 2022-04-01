@@ -11,13 +11,13 @@ const Modal = ({ viewModal, toggleModal }) => {
         <div className='modal'>
             <div className='modal-container'>
                 <div className='modal-header'>
-                    <button className='modal-close-btn' onClick={closeModal}> X </button>
+                    <button className='btn modal-close-btn' onClick={closeModal}> X </button>
                 </div>
                 <div className='modal-body'>
                     <h1>Reserved for to-do input text field</h1>
                 </div>
                 <div className='modal-footer'>
-                    <button className='submit-btn' onClick={handleSubmit}>Submit</button>
+                    <button className='btn submit-btn' onClick={handleSubmit}>Submit</button>
                 </div>
             </div>
         </div>
