@@ -30,4 +30,12 @@
 
 <center>
     <img src="./src/images/gifs/formDemo.gif" align="center" alt="outline" width="300"/>
+</center><br><br>
+
+## *Initial styling and todo modal added*
+> User cards are now generated with basic styling in place.  Avatars are imported using gravatar and default to a retro avatar when no imported avatars are found.  The old facebook resemblance is not a coincidence!
+<br><br>
+
+<center>
+    <img src="./src/images/gifs/todoModal.gif" align="center" alt="outline" width="300"/>
 </center>
